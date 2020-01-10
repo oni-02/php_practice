@@ -32,13 +32,21 @@ function c($a,$b) {
 echo c(5,3);
 echo "\n";
 
-function a() {
+    function x($arr){
+    $totle = 1;
     
-    $arr = array(1, 3, 5 ,7, 9);
-    return "product(arr) = " . array_product($arr)."\n";
     
-}
-echo a();
+    foreach($arr as $arry){
+        $totle *= $arry;
+    }
+    echo $totle;
+    }
+    x (array(1,3,5,7,9));
+    echo "\n";
+    
+        
+    
+
 
  
  
@@ -48,9 +56,7 @@ echo a();
   . "<p>タグ取り除くよっ！</p>";
 echo strip_tags($str,"<p>") ."\n";
 
-$furutsu = array("いちご","ぶどう","なし");
-array_merge($furutsu,"みかん","柿");
-print_r($furutsu);
+
 
  function max_array($arr) {
   // とりあえず配列の最初の要素を一番大きい値とする
@@ -69,5 +75,6 @@ print_r($furutsu);
  $max_array_result = max_array($test_array);
  
  print_r($max_array_result);
+ 
  echo "\n";
  
